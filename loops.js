@@ -8,3 +8,5 @@ function forLoop() {
       return "I am ${i} strange loops."
     }
   }
+}
+
