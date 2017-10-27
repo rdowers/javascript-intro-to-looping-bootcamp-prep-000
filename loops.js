@@ -20,3 +20,16 @@ function whileLoop(num) {
   }
   return "done";
 }
+
+// TODO: Define a function called doWhileLoop in loops.js. The function should take an array as an argument. Use the maybeTrue() function (you can copy it from this README) as the condition, and remove elements from the array until the array is empty or until maybeTrue() returns false. (Your condition might look something like array.length > 0 && maybeTrue().) Finally, return the array.
+
+function maybeTrue() {
+  return Math.random() >= 0.5 // Returns a random number between 0 (inclusive) and 1 (exclusive)
+}
+
+function doWhileLoop(array) {
+  do {
+    array.shift()
+  } while (array.length > 0 && maybeTrue());
+  return array;
+}
