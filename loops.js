@@ -7,5 +7,5 @@ if (i = 1) {
 } else {
   return "I am ${i} strange loops."
 }
-  
+
 };
